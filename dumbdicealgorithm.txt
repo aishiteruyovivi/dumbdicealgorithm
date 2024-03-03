@@ -1,0 +1,31 @@
+var dice = Math.floor(Math.random() * 10);
+ 
+ 
+ 
+ 
+rollDice();
+ 
+ 
+function rollDice(){
+    if (dice === 1 ){
+        console.log("You've rolled a 1.");
+    }
+    if (dice === 2){
+        console.log("You've rolled a 2.");
+    }
+    if (dice === 3){
+        console.log("You've rolled a 3.");
+    }
+    if (dice === 4){
+        console.log("You've rolled a 4.");
+    }
+    if (dice === 5){
+        console.log("You've rolled a 5.");
+    }
+    if (dice === 6){
+        console.log("You've rolled a 6.");
+    } 
+    if (dice > 6){
+        rollDice();
+    }
+}
